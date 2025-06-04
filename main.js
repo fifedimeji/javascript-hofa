@@ -58,7 +58,6 @@ console.log(lastedTenYears)
 // map creates a new array by transforming each element with a function
 
 // Extract and log company names (Note: console.log returns undefined)
-// This doesn't create a useful array because console.log returns undefined
 const companyNames = companies.map(company => console.log(company.name))
 
 // Create formatted strings showing company name and years of operation
@@ -75,7 +74,6 @@ const agesTimesTwo = ages.map(age => console.log(age * 2))
 
 // Chained map operations: first get square root, then double the result
 // First map gets square root, second map doubles those values
-// Note: Second map logs the result, so final array contains undefined values
 const sqrtAgesTimesTwo = ages
 .map(age => (Math.sqrt(age)))
 .map(age => console.log(age * 2))
